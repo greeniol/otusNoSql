@@ -6,5 +6,7 @@
 5. Проделала туже историю в клиенте. Клиент грязно выругался при попытке заливки скачанного файла в таблицу.
 6. В итоге взяла таблицы из https://clickhouse.com/docs/ru/getting-started/example-datasets/metrica/,прихватила сразу обе visits и hits чтоб не мелочиться. на этот раз через клиент все залилось нормально.
 7. Сделала обеим таблам OPTIMIZE и COUNT:
-...clickhouse-client --host rc1c-kr2ewt26dcn6pkaz.mdb.yandexcloud.net --secure --user user1 --database db1 --port 9440 --password 12345678 --query "SELECT COUNT(*) FROM db1.visits_v1"
-clickhouse-client --host rc1c-kr2ewt26dcn6pkaz.mdb.yandexcloud.net --secure --user user1 --database db1 --port 9440 --password 12345678 --query "SELECT COUNT(*) FROM db1.hits_v1"
+
+  clickhouse-client --host rc1c-kr2ewt26dcn6pkaz.mdb.yandexcloud.net --secure --user user1 --database db1 --port 9440 --password 12345678 --query "SELECT COUNT(*) FROM db1.visits_v1"
+  
+  clickhouse-client --host rc1c-kr2ewt26dcn6pkaz.mdb.yandexcloud.net --secure --user user1 --database db1 --port 9440 --password 12345678 --query "SELECT COUNT(*) FROM db1.hits_v1"
